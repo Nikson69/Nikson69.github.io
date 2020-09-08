@@ -1,0 +1,24 @@
+{
+  "name": "nikson69.github.io",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikson69/Nikson69.github.io.git"
+  },
+  "keywords": [
+    "Nikson69",
+    "blog",
+    "site"
+  ],
+  "author": "Nikson69",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nikson69/Nikson69.github.io/issues"
+  },
+  "homepage": "https://github.com/Nikson69/Nikson69.github.io#readme"
+}
