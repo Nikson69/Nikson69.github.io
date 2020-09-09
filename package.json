@@ -4,7 +4,7 @@
   "description": "My personal website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/Nikson69/Nikson69.github.io/issues"
   },
-  "homepage": "https://github.com/Nikson69/Nikson69.github.io#readme"
+  "homepage": "https://github.com/Nikson69/Nikson69.github.io#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
 }
