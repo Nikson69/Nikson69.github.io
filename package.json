@@ -1,0 +1,36 @@
+{
+  "name": "nikson69.github.io",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikson69/Nikson69.github.io.git"
+  },
+  "keywords": [
+    "Nikson69",
+    "blog",
+    "site"
+  ],
+  "author": "Nikson69",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nikson69/Nikson69.github.io/issues"
+  },
+  "homepage": "https://github.com/Nikson69/Nikson69.github.io#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "babel-loader": "^8.1.0",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
