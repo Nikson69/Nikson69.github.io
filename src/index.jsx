@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
  
-const title = 'React with Webpack and Babel';
+const title = 'Привет, скоро тут что-нибудь должно быть (:';
  
 ReactDOM.render(
   <div>{title}</div>,
