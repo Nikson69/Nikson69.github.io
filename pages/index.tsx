@@ -11,6 +11,7 @@ export default function MyApp() {
     <Head>
       <title>Nikson69</title>
       <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+      <link href="/favicon.png" rel="shortcut icon" type="image/x-icon"/>
     </Head>
     <HomePage />
   </React.Fragment>
