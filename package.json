@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "start": "next start",
-    "static": "next build && next export"
+    "static": "next build && next export",
+    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "repository": {
     "type": "git",
