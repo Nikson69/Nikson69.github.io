@@ -1,23 +1,16 @@
-import * as React from "react";
-import Image from 'next/image'
-import profilePic from '../public/images/ava.jpg'
-import style from './style.module.scss'
-import Facebook from '../public/svg/facebook.svg'
+// components/MyComponent.tsx
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-export default function MainPage ()  {   
-        return (
-          // <div className={style.temp} >
+const HomePage: React.FC = () => {
+  const { t } = useTranslation();
 
-          //   <Image src={profilePic} alt="Picture of the author" />
-          // hello
-          // </div>
-          <React.Fragment>
-            <div>
-              <div>Hello!</div>
-              <div>My name is Nikita.</div>
-              <div><Facebook/></div>
-            </div>
-          </React.Fragment>
-        );
-    
-}
+  return (
+    <div>
+      <h1>{t('hello')}</h1>
+      <p>{t('hello')}</p>
+    </div>
+  );
+};
+
+export default HomePage;

@@ -1,6 +1,8 @@
 const path = require('path')
+const { withPlugins } = require('next-compose-plugins');
+const withTM = require('next-transpile-modules')(['react-i18next']);
 
-module.exports = {
+const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
@@ -20,4 +22,20 @@ module.exports = {
 
     return config;
   }
-}
+};
+
+module.exports = withPlugins(
+  [
+    [withTM],
+    {
+      webpack: (config, { isServer }) => {
+        if (!isServer) {
+          config.resolve.alias['@configs/i18n'] = require.resolve('./i18n');
+        }
+
+        return config;
+      },
+    },
+  ],
+  nextConfig
+);
