@@ -30,7 +30,8 @@
     "@types/node": "^20.6.2",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
-    "@types/rss": "^0.0.30"
+    "@types/rss": "^0.0.30",
+    "sass": "^1.67.0"
   },
   "dependencies": {
     "date-fns": "^2.30.0",

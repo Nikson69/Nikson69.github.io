@@ -4,6 +4,7 @@ import Container from './container';
 import Link from 'next/link';
 import { Button } from 'semantic-ui-react';
 
+
 const Header: React.FC = () => {
   const { i18n } = useTranslation();
 
@@ -15,6 +16,8 @@ const Header: React.FC = () => {
     <div>
       <Button class="ui yellow button" onClick={() => changeLanguage('en')}>English</Button>
       <Button class="ui yellow button" onClick={() => changeLanguage('ru')}>Russian</Button>
+
+      <Button color='yellow'>Yellow</Button>
       {/* Add more language buttons as needed */}
       <Container>
         <nav className="flex space-x-4">

@@ -6,6 +6,7 @@ import { getAllPosts } from '../../lib/getPost'
 import { useTranslation } from 'react-i18next'
 import dictionaryWords from '../../locales/dictionary'
 import { generateFeedRSS } from '../../lib/gen-rss'
+import { Button } from 'semantic-ui-react'
 
 export default function NotePage({
   allPosts,

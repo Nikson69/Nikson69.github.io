@@ -1,14 +1,25 @@
 // components/MyComponent.tsx
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import bg from '../public/images/background.jpg'
+import style from '../public/styles/index.module.scss'
+import Image from 'next/image'
+import profilePic from '../public/images/Nikson69.png'
+import { useRouter } from 'next/router';
 
 const HomePage: React.FC = () => {
-  const { t } = useTranslation();
+    const router = useRouter();
 
   return (
-    <div>
-      <h1>{t('hello')}</h1>
-      <p>{t('hello')}</p>
+    <div className={style.main} style={{ backgroundImage: `url(${bg.src})` }} >
+      <div className={style.image}>
+        <Image
+          layout='responsive'
+          src={profilePic}
+          alt=""
+          onClick={() => router.push('/posts')}
+        />
+      </div>
     </div>
   );
 };
