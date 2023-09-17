@@ -5,6 +5,7 @@ import distanceToNow from '../../lib/dateRelative'
 import { getAllPosts } from '../../lib/getPost'
 import { useTranslation } from 'react-i18next'
 import dictionaryWords from '../../locales/dictionary'
+import { generateFeedRSS } from '../../lib/gen-rss'
 
 export default function NotePage({
   allPosts,
@@ -38,6 +39,7 @@ export default function NotePage({
 
 export async function getStaticProps() {
   const allPosts = getAllPosts(['slug', 'title', 'excerpt', 'date', 'lang'])
+  await generateFeedRSS(allPosts);
 
   return {
     props: { allPosts },

@@ -24,7 +24,7 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.scss"
-, "i18n.js", "utils/readMarkdown.js"  ],
+, "i18n.js", "utils/readMarkdown.js", "pages/feed/rrs.js"  ],
   "exclude": [
     "node_modules"
   ]
