@@ -6,9 +6,10 @@ import style from '../public/styles/index.module.scss'
 import Image from 'next/image'
 import profilePic from '../public/images/Nikson69.png'
 import { useRouter } from 'next/router';
+import { Button } from 'semantic-ui-react';
 
 const HomePage: React.FC = () => {
-    const router = useRouter();
+  const router = useRouter();
 
   return (
     <div className={style.main} style={{ backgroundImage: `url(${bg.src})` }} >

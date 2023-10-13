@@ -1,6 +1,6 @@
 import type { InferGetStaticPropsType } from 'next'
 import Link from 'next/link'
-import Container from '../../components/container'
+import Container from '../../components/container/container'
 import distanceToNow from '../../lib/dateRelative'
 import { getAllPosts } from '../../lib/getPost'
 import { useTranslation } from 'react-i18next'
